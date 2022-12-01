@@ -30,7 +30,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/MainActivityGame_Reset"
+        app:layout_constraintBottom_toTopOf="@+id/MainActivity_GameReset"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainActivity_TicTacToe">
@@ -119,7 +119,7 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="4dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/MainActivityGame_Reset"
+        app:layout_constraintBottom_toTopOf="@+id/MainActivity_GameReset"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -150,15 +150,16 @@
 
 
     <Button
-        android:id="@+id/MainActivityGame_Reset"
+        android:id="@+id/MainActivity_GameReset"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:backgroundTint="#E1470D"
         android:gravity="center"
         android:text="Game Reset"
         android:textColor="#ffffff"
-        android:textSize="20sp"
+        android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -168,17 +169,17 @@
         android:id="@+id/linearLayout6"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MainActivityGame_Reset">
+        app:layout_constraintTop_toBottomOf="@+id/MainActivity_GameReset">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/MainActivity_PlayXO"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
