@@ -24,19 +24,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/MainLinearBoard_L"
         android:layout_width="381dp"
         android:layout_height="366dp"
         android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/MainActivity_GameReset"
         app:layout_constraintEnd_toEndOf="@+id/linearLayout5"
         app:layout_constraintStart_toStartOf="@+id/linearLayout5"
         app:layout_constraintTop_toBottomOf="@+id/MainActivity_TicTacToe">
 
         <ImageView
-            android:id="@+id/MainActivity_LinearBoard"
+            android:id="@+id/MainLinearBoard"
             android:layout_width="match_parent"
 
             android:layout_height="match_parent"
@@ -55,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/MainActivity_TicTacToe">
 
         <ImageButton
-            android:id="@+id/MainActivity_BoardBtn_00"
+            android:id="@+id/Boardbutton_00"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -63,14 +61,14 @@
             app:srcCompat="@drawable/empty" />
 
         <ImageButton
-            android:id="@+id/MainActivity_BoardBtn_01"
+            android:id="@+id/Boardbutton_01"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/empty" />
 
         <ImageButton
-            android:id="@+id/MainActivity_BoardBtn_02"
+            android:id="@+id/Boardbutton_02"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -90,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <ImageButton
-            android:id="@+id/MainActivity_BoardBtn_10"
+            android:id="@+id/Boardbutton_10"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -98,14 +96,14 @@
             app:srcCompat="@drawable/empty" />
 
         <ImageButton
-            android:id="@+id/MainActivity_BoardBtn_11"
+            android:id="@+id/Boardbutton_11"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/empty" />
 
         <ImageButton
-            android:id="@+id/MainActivity_BoardBtn_12"
+            android:id="@+id/Boardbutton_12"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -113,6 +111,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -126,7 +125,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <ImageButton
-            android:id="@+id/MainActivity_BoardBtn_20"
+            android:id="@+id/Boardbutton_20"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -134,20 +133,19 @@
             app:srcCompat="@drawable/empty" />
 
         <ImageButton
-            android:id="@+id/MainActivity_BoardBtn_21"
+            android:id="@+id/Boardbutton_21"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/empty" />
 
         <ImageButton
-            android:id="@+id/MainActivity_BoardBtn_22"
+            android:id="@+id/Boardbutton_22"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/empty" />
     </LinearLayout>
-
 
     <Button
         android:id="@+id/MainActivity_GameReset"
@@ -162,7 +160,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/MainLinearBoard_L" />
 
     <LinearLayout
         android:id="@+id/linearLayout6"
@@ -182,5 +180,17 @@
             app:srcCompat="@drawable/xplay" />
 
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MainLinearBoard_marks"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/MainActivity_GameReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
