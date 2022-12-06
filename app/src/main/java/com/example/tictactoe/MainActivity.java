@@ -1,3 +1,9 @@
+/*
+        אלמוג מרזוק 203385570
+        שובל אשכנזי 314828955
+        קישור לסרטון:
+        https://watch.screencastify.com/v/2a3NHQ9Aw6f8MHsFn1rG
+*/
 package com.example.tictactoe;
 
 import androidx.appcompat.app.AppCompatActivity;
